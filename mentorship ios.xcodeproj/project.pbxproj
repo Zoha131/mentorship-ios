@@ -108,6 +108,7 @@
 		839761C1249F821A0020535C /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839761C0249F821A0020535C /* ProfileViewModel.swift */; };
 		839761C3249F83860020535C /* MembersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839761C2249F83860020535C /* MembersViewModel.swift */; };
 		83AA531D249F860F001D6B0B /* UIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AA531C249F860F001D6B0B /* UIHelper.swift */; };
+		892B1E1925BF938C001A4B74 /* EmptyIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892B1E1825BF938C001A4B74 /* EmptyIndicator.swift */; };
 		AA29979BC7A25F0F15EF1EAB /* Pods_mentorship_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B7C6AD7AFF5534C376F1BAF /* Pods_mentorship_ios.framework */; };
 /* End PBXBuildFile section */
 
@@ -243,6 +244,7 @@
 		839761C0249F821A0020535C /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		839761C2249F83860020535C /* MembersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MembersViewModel.swift; sourceTree = "<group>"; };
 		83AA531C249F860F001D6B0B /* UIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIHelper.swift; sourceTree = "<group>"; };
+		892B1E1825BF938C001A4B74 /* EmptyIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyIndicator.swift; sourceTree = "<group>"; };
 		A54B8453C53ABE688B6FEF0C /* Pods-mentorship ios-mentorship iosUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mentorship ios-mentorship iosUITests.debug.xcconfig"; path = "Target Support Files/Pods-mentorship ios-mentorship iosUITests/Pods-mentorship ios-mentorship iosUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		A786C8A19E95295DBDC3690A /* Pods-mentorship iosTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mentorship iosTests.debug.xcconfig"; path = "Target Support Files/Pods-mentorship iosTests/Pods-mentorship iosTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B8251B7BB63EBD5A6466B87F /* Pods-mentorship ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mentorship ios.debug.xcconfig"; path = "Target Support Files/Pods-mentorship ios/Pods-mentorship ios.debug.xcconfig"; sourceTree = "<group>"; };
@@ -368,7 +370,6 @@
 				53D4545324CD50F500083215 /* HomeTests.swift */,
 				53A6DDEF24BE52A100D5DFCE /* ProfileTests.swift */,
 				53A6DC8324CDAC7C00E4FE14 /* RelationTests.swift */,
-				53AC6DE624D2BF8700F7FDE3 /* TaskCommentsTests.swift */,
 				53A6DC8524CDC4EF00E4FE14 /* MembersTests.swift */,
 				53A6DC8724CDCBCA00E4FE14 /* SettingsTests.swift */,
 				534B69D924CB6DAE007646E6 /* MockURLProtocol.swift */,
@@ -528,6 +529,7 @@
 				53C0206E249B8D270000BEB5 /* CommonProfileSection.swift */,
 				53FEC16E24D8842200073535 /* SearchNavigation.swift */,
 				53C59E8D24E6B04900EA0DB4 /* SocialSignInButtons.swift */,
+				892B1E1825BF938C001A4B74 /* EmptyIndicator.swift */,
 			);
 			path = UtilityViews;
 			sourceTree = "<group>";
@@ -994,6 +996,7 @@
 				538CD07224ABE9B800F6A665 /* AddTask.swift in Sources */,
 				53C59E8E24E6B04900EA0DB4 /* SocialSignInButtons.swift in Sources */,
 				53F205DD249ADF9200DDE52E /* ProfileEditor.swift in Sources */,
+				892B1E1925BF938C001A4B74 /* EmptyIndicator.swift in Sources */,
 				534AC02D2486D5CB00A34A46 /* BigBoldButtonStyle.swift in Sources */,
 				53D127B1249C956A003B4756 /* ActivityWithText.swift in Sources */,
 				530F44162482752500B1FD0B /* SceneDelegate.swift in Sources */,
@@ -1210,9 +1213,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "mentorship ios/mentorship ios.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"mentorship ios/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 4UDSZ3HFA2;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "mentorship ios/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1221,6 +1225,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = org.anitab.mentorship;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1232,9 +1237,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "mentorship ios/mentorship ios.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"mentorship ios/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 4UDSZ3HFA2;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "mentorship ios/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1243,6 +1249,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = org.anitab.mentorship;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

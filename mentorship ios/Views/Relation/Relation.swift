@@ -72,7 +72,7 @@ struct Relation: View {
     }
 
     @ViewBuilder func trailingNavigationBarItem() -> some View {
-        if let id = relationViewModel.currentRelation.id, id != 0 {
+        if hasRelation {
             Button(LocalizableStringConstants.addTask) {
                 self.relationViewModel.addTask.toggle()
             }
@@ -82,6 +82,9 @@ struct Relation: View {
     var body: some View {
         NavigationView {
             ZStack {
+                //Screen background color
+                DesignConstants.Colors.formBackgroundColor.edgesIgnoringSafeArea(.all)
+
                 //show activity spinner if in activity
                 if relationViewModel.inActivity {
                     ActivityIndicator(isAnimating: $relationViewModel.inActivity, style: .medium)
@@ -126,7 +129,7 @@ struct Relation: View {
                         TasksSection(tasks: relationViewModel.doneTasks, navToTaskComments: true)
                     }
                 } else {
-                    Text(LocalizableStringConstants.noRelationText)
+                    EmptyIndicator(title: LocalizableStringConstants.noActiveRelation)
                 }
             }
             .environment(\.horizontalSizeClass, .regular)
